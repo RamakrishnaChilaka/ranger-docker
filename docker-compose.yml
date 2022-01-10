@@ -2,7 +2,7 @@ version: '2'
 
 services:
   ranger-admin:
-    image: ranger-admin
+    image: rkchilaka378/ranger-admin
     ports:
     - 6080:6080
     depends_on:

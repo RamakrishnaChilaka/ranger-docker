@@ -6,7 +6,8 @@ ARG RANGER_VERSION=2.1.0
 
 ADD https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.21/mysql-connector-java-8.0.21.jar /opt
 
-ADD http://mirrors.whoishostingthis.com/apache/ranger/${RANGER_VERSION}/apache-ranger-${RANGER_VERSION}.tar.gz /opt
+#ADD http://mirrors.whoishostingthis.com/apache/ranger/${RANGER_VERSION}/apache-ranger-${RANGER_VERSION}.tar.gz /opt
+ADD https://dlcdn.apache.org/ranger/2.1.0/apache-ranger-2.1.0.tar.gz /opt
 
 COPY ranger-entrypoint.sh /opt
 
